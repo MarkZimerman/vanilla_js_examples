@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .gallery {
+        width: 860px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .gallery .photos {
+        position: relative;
+        height: 670px;
+      }
+
+      .gallery .photos img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .gallery .photos img.showed {
+        opacity: 1;
+      }
+
+      .gallery .buttons {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery gallery-1">
+      <div class="photos">
+        <img src="https://picsum.photos/860/670?random=1" alt="" />
+        <img src="https://picsum.photos/860/670?random=2" alt="" />
+        <img src="https://picsum.photos/860/670?random=3" alt="" />
+        <img src="https://picsum.photos/860/670?random=4" alt="" />
+        <img src="https://picsum.photos/860/670?random=5" alt="" />
+        <img src="https://picsum.photos/860/670?random=6" alt="" />
+        <img src="https://picsum.photos/860/670?random=7" alt="" />
+        <img src="https://picsum.photos/860/670?random=8" alt="" />
+      </div>
+      <div class="buttons">
+        <input type="button" value="<" class="prev" />
+        <input type="button" value=">" class="next" />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
